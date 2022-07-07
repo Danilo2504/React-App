@@ -1,7 +1,7 @@
 import './App.css';
 import Calculator from './components/Calculator';
 // import InputKids from './components/InputKids';
-// import InputKids from './components/CrudApp';
+// import CrudApp from './components/CrudApp';
 
 function App() {
   return(
