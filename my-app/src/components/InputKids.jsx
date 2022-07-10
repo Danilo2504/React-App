@@ -13,32 +13,27 @@ const InputKids = () => {
   };
 
   return (
-    <center>
-      <form onSubmit={(e) => e.preventDefault()}>
-        <h1>Agregar nombre del Estudiante</h1>
-
-        <input
-          type="text"
-          placeholder="Ingrese nombre"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-        />
-
-        <br />
-        <br />
-
-        <button type="submit" onClick={addItem}>
-          Agregar Estudiantes
-        </button>
-
-        <p>Mostrar todos los estudiantes</p>
-
-        {isVisible && name.map((e, index) => <p key={index}>{e}</p>)}
-        <button type="submit" onClick={() => setIsVisible(!isVisible)}>
-          {buttonText}
-        </button>
+    <div class="kids-app">
+      <form class="form" onSubmit={(e) => e.preventDefault()}>
+        <h2>Agregar nombre del Estudiante</h2>
+        <div class="list">
+          <input
+            type="text"
+            placeholder="Ingrese nombre"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+          <button type="submit" onClick={addItem}>
+            Agregar Estudiantes
+          </button>
+          <p>Mostrar todos los estudiantes</p>
+          {isVisible && name.map((e, index) => <p key={index}>{e}</p>)}
+          <button type="submit" onClick={() => setIsVisible(!isVisible)}>
+            {buttonText}
+          </button>
+        </div>
       </form>
-    </center>
+    </div>
   );
 };
 
