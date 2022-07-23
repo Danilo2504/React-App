@@ -9,10 +9,10 @@ function App() {
     <>
       {/*To Do: buscar diferencia entre fragment y div */}
       <InputKids/>
+
       <Calculator/>
-      <CurdApp name="Travis Jackson" age="18"/>
-      <CurdApp name="Linda Moorhouse" age="22"/>
-      <CurdApp name="Jeffrey Delgado"age="21"/>
+
+      <CurdApp/>
     </>
   );
 }
